@@ -36,7 +36,7 @@ export default function Login() {
       localStorage.setItem('PlayerData', JSON.stringify(data)); // current session user
 
       // redirect
-      window.location.href = '/map';
+      window.location.href = '#/map';
     } catch (err) {
       console.error(err);
       setError('Failed to validate ID');
