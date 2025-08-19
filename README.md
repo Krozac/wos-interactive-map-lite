@@ -10,6 +10,12 @@ The **Lite version** of Whiteout Interactive Map runs entirely in the browser wi
 Data such as **users**, **guilds**, and **buildings** are stored in the browser’s `localStorage`.
 This makes it easy to run, share, and test the map without needing Node.js, Express, or MongoDB.
 
+
+## Access
+
+The Lite version is publicly accessible at:  
+[https://whiteout-planner.krozac.fr](https://whiteout-planner.krozac.fr)
+
 ---
 
 ## Installation
