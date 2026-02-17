@@ -41,7 +41,7 @@ async function createTextSprite(building, texture) {
     const name = building?.extraData?.name || '';
     const alliance = building?.alliance?.acronym || '';
     const displayName = texture?.displayname || '';
-    const fullText = `${alliance}${name}${displayName}`;
+    const fullText = `[${alliance}]${name}${displayName}`;
 
 
     const textTexture = await createTextTexture(fullText); // Wait for font + texture

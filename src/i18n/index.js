@@ -11,8 +11,8 @@ i18n
   .use(HttpBackend)
   .use(initReactI18next)
   .init({
-    lng: savedLng || 'en_US',  // <-- initialize with cookie value or fallback
-    fallbackLng: 'en_US',
+    lng: savedLng || 'en_GB',  // <-- initialize with cookie value or fallback
+    fallbackLng: 'en_GB',
     debug: true,
     interpolation: {
       escapeValue: false,

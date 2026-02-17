@@ -20,7 +20,7 @@ export default function TerritoryPanel( ) {
     });
     
   return (
-    <div id="FurnacePanel">
+    <div id="FurnacePanel" style={{ minWidth: '300px' }}>
       <input
         id="search-bar"
         type="text"

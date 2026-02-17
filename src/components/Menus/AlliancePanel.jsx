@@ -31,7 +31,7 @@ export default function AlliancePanel({guilds,addGuild,updateGuild,deleteGuild})
 
 
   return (
-    <div id="AlliancePanel">
+    <div id="AlliancePanel" style={{ minWidth: '200px' }}>
       <button onClick={handleAdd} className="add-guild-btn">Add Alliance</button>
 
       {formMode && (
