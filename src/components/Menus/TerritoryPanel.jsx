@@ -22,7 +22,7 @@ export default function TerritoryPanel( ) {
   return (
     <div id="FurnacePanel" style={{ minWidth: '300px' }}>
       <input
-        id="search-bar"
+        id="search-bar" 
         type="text"
         placeholder="Search by name or alliance"
         value={searchTerm}

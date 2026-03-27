@@ -4,15 +4,10 @@ const API_URL = 'https://wos-giftcode-api.centurygame.com/api/player';
 const SECRET = 'tB87#kPtkxqOS2';
 
 export async function fetchUserDataById(id) {
-  const time = Date.now();
-  const form = `fid=${id}&time=${time}`;
-  const sign = MD5(form + SECRET).toString(); // MD5 hash as string
-  const body = new URLSearchParams({ sign, fid: id, time });
-
-  const res = await fetch(API_URL, {
+  const res = await fetch('https://<your-project>.vercel.app/api/login', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ id })
   });
 
   const data = await res.json();
