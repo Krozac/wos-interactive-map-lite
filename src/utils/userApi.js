@@ -4,7 +4,7 @@ const API_URL = 'https://wos-giftcode-api.centurygame.com/api/player';
 const SECRET = 'tB87#kPtkxqOS2';
 
 export async function fetchUserDataById(id) {
-  const res = await fetch('https://<your-project>.vercel.app/api/login', {
+  const res = await fetch('https://wos-map-lite-login-api.vercel.app/api/login', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ id })
